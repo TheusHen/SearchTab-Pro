@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SearchTab Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app-wrapper">
+    <div id="app">
+        <button id="closeBtn" title="Fechar"><i data-lucide="x" class="icon-close"></i></button>
+
+        <div class="header">
+            <i data-lucide="thermometer-sun" class="icon"></i>
+            <div id="tempDisplay" class="temp-text">Carregando temperatura...</div>
+        </div>
+
+        <div class="search-group">
+            <div class="engine-select">
+                <img id="engineIcon" src="assets/icons/Google.png" alt="engine" />
+                <select id="searchEngine">
+                    <option value="google" data-icon="Google.png">Google</option>
+                    <option value="yahoo" data-icon="Yahoo.png">Yahoo!</option>
+                    <option value="bing" data-icon="Bing.png">Bing</option>
+                    <option value="duckduckgo" data-icon="DuckGo.png">DuckDuckGo</option>
+                    <option value="yandex" data-icon="Yandex.png">Yandex</option>
+                    <option value="github" data-icon="GitHub.png">GitHub</option>
+                </select>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="queryInput" placeholder="Digite sua busca..." />
+                <button id="searchBtn"><i data-lucide="search" class="icon-btn"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="renderer.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>

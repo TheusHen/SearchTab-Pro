@@ -1,0 +1,12 @@
+{
+  "name": "searchtab-pro",
+  "version": "1.0.0",
+  "description": "Mostrador de temperatura automático com busca inteligente",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^36.4.0"
+  }
+}
