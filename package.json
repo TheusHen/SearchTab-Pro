@@ -3,10 +3,32 @@
   "version": "1.0.0",
   "description": "Mostrador de temperatura automático com busca inteligente",
   "main": "main.js",
+  "author": "Theushen",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
-  "dependencies": {
+  "build": {
+    "appId": "com.theushen.searchtabpro",
+    "productName": "SearchTab Pro",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
     "electron": "^36.4.0"
   }
 }
